@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Ryan McKeown <ryanmckeown@mail4me.com>"]
 readme = "README.md"
-packages = [{include = "auto_correct_raw_photos"}]
+packages = [{include = "rawtherapee_auto"}]
 include = ["res/auto-correction.pp3"]
 
 [tool.poetry.dependencies]
@@ -14,6 +14,9 @@ tqdm = "^4.66.5"
 
 [tool.poetry.scripts]
 rawtherapee-auto = "rawtherapee_auto.cli:main"
+
+[tool.poetry.group.dev.dependencies]
+black = "^24.8.0"
 
 [build-system]
 requires = ["poetry-core"]

@@ -14,4 +14,6 @@ After this, install `rawtherapee-auto` using Pip or your Python package manageme
 rawtherapee-auto /path/to/raw/photos /desired/output/location
 ```
 
+This will run RawTherapee on all the raw photos found in `/path/to/raw/photos`. It will use RawTherapee's auto-level functionality to try to get exposure, contrast, etc. in the right ball-park for each photo found. Then it will move the original raw photo along with the outputted .pp3 file from RawTherapee's processing to the `/desired/output/location`.
+
 Run `rawtherapee-auto --help` for additional help.

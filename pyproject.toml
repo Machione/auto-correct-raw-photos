@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "rawtherapee-auto"
 version = "0.1.0"
-description = ""
+description = "Import raw photos and use RawTherapee to auto-level them before copying them to an output location."
 authors = ["Ryan McKeown <ryanmckeown@mail4me.com>"]
 readme = "README.md"
 packages = [{include = "rawtherapee_auto"}]

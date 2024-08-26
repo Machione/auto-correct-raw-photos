@@ -32,7 +32,7 @@ class FileMover:
             os.remove(self.png_path)
             self.png_exists = False
 
-            os.rename(self.input_pp3_path, self.output_pp3_path)
+            shutil.move(self.input_pp3_path, self.output_pp3_path)
             self.pp3_exists = False
 
             shutil.copy2(self.input_raw_path, self.output_dir)

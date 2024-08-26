@@ -1,15 +1,19 @@
 [tool.poetry]
-name = "auto-correct-raw-photos"
+name = "rawtherapee-auto"
 version = "0.1.0"
 description = ""
 authors = ["Ryan McKeown <ryanmckeown@mail4me.com>"]
 readme = "README.md"
 packages = [{include = "auto_correct_raw_photos"}]
+include = ["res/auto-correction.pp3"]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 click = "^8.1.7"
+tqdm = "^4.66.5"
 
+[tool.poetry.scripts]
+rawtherapee-auto = "rawtherapee_auto.cli:main"
 
 [build-system]
 requires = ["poetry-core"]
